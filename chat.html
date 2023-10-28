@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <main class="main">
+            <div class="sidebar">
+                <!-- Панель выбора диалога -->
+                <div class="chat-list" id="chat-list">
+                    <!-- Иконки чатов -->
+                    <!-- Добавьте другие чаты здесь -->
+                    
+                </div>
+                <button id="create-chat-btn">Создать чат</button>
+                    <form id="create-chat-from" class="none">
+                        <input type="text" id="nickname-input" placeholder="Введите ник">
+                        <button id="create-chat">Создать чат</button>
+                    </form>
+                <button id="logout-button">Выйти</button>
+            </div>
+            <div class="chat">
+                <div class="messages" id="messages">
+                        
+                    <!-- Окно чата -->
+                </div>
+                <div class="input-container">
+                    <input type="text" id="user-input" placeholder="Введите ваше сообщение">
+                    <button id="send-button">Отправить</button>
+                </div>
+            </div>
+        </main>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="js/chat.js"></script>
+        <script src="js/user-chats-nav.js"></script>
+        <script src="js/main-window.js"></script>
+    </body>
+</html>
