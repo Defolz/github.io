@@ -2,22 +2,54 @@
 <html>
     <head>
         <link rel="stylesheet" href="css/style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
     </head>
     <body>
-        <main class="main">
+        <main class="main" id="main">
             <div class="sidebar">
                 <!-- Панель выбора диалога -->
-                <div class="chat-list" id="chat-list">
-                    <!-- Иконки чатов -->
-                    <!-- Добавьте другие чаты здесь -->
-                    
+                <div class="chat-list" id="chat-list">     
                 </div>
-                <button id="create-chat-btn">Создать чат</button>
-                    <form id="create-chat-from" class="none">
-                        <input type="text" id="nickname-input" placeholder="Введите ник">
-                        <button id="create-chat">Создать чат</button>
-                    </form>
-                <button id="logout-button">Выйти</button>
+                
+                <div class="sidebar-footer">
+                    <div class="sidebar-footer-container">
+                        <button id="create-chat-btn">
+                            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_173_301)">
+                                <circle cx="12" cy="11.999" r="9" fill="#1CB0F6" stroke="#1CB0F6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M12 9V15" stroke="#84D8FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M9 12H15" stroke="#DDF4FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0_173_301">
+                                <rect width="36" height="36" fill="white"/>
+                                </clipPath>
+                                </defs>
+                            </svg>
+                        </button>
+                        <button id="logout-button">
+                            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_173_542)">
+                                <path d="M9 4.00018H19V18.0002C19 19.1048 18.1046 20.0002 17 20.0002H9" stroke="#EA2B2B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M15 12.0002H5" stroke="#EA2B2B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M12 15.0002L15 12.0002L12 9.00018" stroke="#FF4B4B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0_173_542">
+                                <rect width="36" height="36" fill="white"/>
+                                </clipPath>
+                                </defs>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="create-chat-from none" id="add-chat">
+                <form id="create-chat-from">
+                    <input type="text" id="nickname-input" placeholder="Введите ник">
+                    <button id="create-chat">Создать чат</button>
+                </form>
+                <button id="close-form">Закрыть</button>
             </div>
             <div class="chat">
                 <div class="messages" id="messages">
@@ -26,7 +58,19 @@
                 </div>
                 <div class="input-container">
                     <input type="text" id="user-input" placeholder="Введите ваше сообщение">
-                    <button id="send-button">Отправить</button>
+                    <button id="send-button">
+                        <svg width="36" height="36" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_173_433)">
+                        <path d="M7.23983 4.53465L19.1842 10.1925C20.7093 10.9149 20.7093 13.0851 19.1842 13.8075L7.23983 19.4653C5.82469 20.1357 4.22297 18.9933 4.39589 17.437L4.97546 12.2209C4.99177 12.0741 4.99177 11.9259 4.97546 11.7791L4.39589 6.56299C4.22297 5.0067 5.82469 3.86433 7.23983 4.53465Z" fill="#1CB0F6" stroke="#1CB0F6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M7 12H12" stroke="#DDF4FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </g>
+                        <defs>
+                        <clipPath id="clip0_173_433">
+                        <rect width="36" height="36" fill="white"/>
+                        </clipPath>
+                        </defs>
+                        </svg>
+                    </button>
                 </div>
             </div>
         </main>
